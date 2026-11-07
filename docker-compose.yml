@@ -1,0 +1,22 @@
+﻿# Local development infrastructure ONLY. Not for production.
+# SQL Server: the developer's local SQL Express is used for dev; tests use Testcontainers.
+services:
+  redis:
+    image: redis:7.4-alpine
+    container_name: marketpulse-redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "no", "--save", ""]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  mailpit:
+    # Captures all outgoing dev email (verification, password reset). Nothing is delivered externally.
+    image: axllent/mailpit:v1.21
+    container_name: marketpulse-mailpit
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # Web UI

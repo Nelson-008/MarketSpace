@@ -1,0 +1,5 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\MarketPulse.SharedKernel\MarketPulse.SharedKernel.csproj" />
+  </ItemGroup>
+</Project>

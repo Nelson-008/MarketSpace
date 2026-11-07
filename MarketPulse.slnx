@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/BuildingBlocks/">
+    <Project Path="src/BuildingBlocks/MarketPulse.Application.Abstractions/MarketPulse.Application.Abstractions.csproj" />
+    <Project Path="src/BuildingBlocks/MarketPulse.Infrastructure.Common/MarketPulse.Infrastructure.Common.csproj" />
+    <Project Path="src/BuildingBlocks/MarketPulse.SharedKernel/MarketPulse.SharedKernel.csproj" />
+  </Folder>
+  <Folder Name="/src/Hosts/">
+    <Project Path="src/Hosts/MarketPulse.Api/MarketPulse.Api.csproj" />
+    <Project Path="src/Hosts/MarketPulse.Workers/MarketPulse.Workers.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/" />
+  <Folder Name="/src/Modules/Administration/">
+    <Project Path="src/Modules/Administration/MarketPulse.Modules.Administration/MarketPulse.Modules.Administration.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Identity/">
+    <Project Path="src/Modules/Identity/MarketPulse.Modules.Identity/MarketPulse.Modules.Identity.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Instruments/">
+    <Project Path="src/Modules/Instruments/MarketPulse.Modules.Instruments/MarketPulse.Modules.Instruments.csproj" />
+  </Folder>
+  <Folder Name="/src/Modules/Workspace/">
+    <Project Path="src/Modules/Workspace/MarketPulse.Modules.Workspace/MarketPulse.Modules.Workspace.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MarketPulse.ArchitectureTests/MarketPulse.ArchitectureTests.csproj" />
+    <Project Path="tests/MarketPulse.IntegrationTests/MarketPulse.IntegrationTests.csproj" />
+    <Project Path="tests/MarketPulse.UnitTests/MarketPulse.UnitTests.csproj" />
+  </Folder>
+</Solution>

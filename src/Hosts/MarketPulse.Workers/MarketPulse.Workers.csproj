@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <UserSecretsId>marketpulse-workers-dev</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BuildingBlocks\MarketPulse.Application.Abstractions\MarketPulse.Application.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
